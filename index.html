@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="css/cabecalho.css">
   <link rel="stylesheet" href="css/cartao.css">
   <link rel="stylesheet" href="css/formNovoCartao.css">
+  <link rel="stylesheet" href="css/no-js.css">
   <title>Ceep</title>
   <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
     <symbol id="iconeEditar" viewBox="0 0 384 384">
@@ -36,14 +37,14 @@
       Ceep
     </h1>
     <div class="opcoesDaPagina">
-      <input type="search" placeholder="busca" id="busca" class="opcoesDaPagina-opcao">
-      <button id="btnMudaLayout" class="opcoesDaPagina-opcao opcoesDaPagina-botao">
+      <input type="search" placeholder="busca" id="busca" class="opcoesDaPagina-opcao no-js">
+      <button id="btnMudaLayout" class="opcoesDaPagina-opcao opcoesDaPagina-botao no-js">
         Linhas
       </button>
-      <button id="btnAjuda" class="opcoesDaPagina-opcao opcoesDaPagina-botao">
+      <button id="btnAjuda" class="opcoesDaPagina-opcao opcoesDaPagina-botao no-js">
         ?
       </button>
-      <button id="btnSync" class="opcoesDaPagina-opcao opcoesDaPagina-botao botaoSync botaoSync--sincronizado">
+      <button id="btnSync" class="opcoesDaPagina-opcao opcoesDaPagina-botao botaoSync botaoSync--sincronizado no-js">
         <svg class="botaoSync-icone">
           <use xlink:href="#iconeSincronizar"></use>
         </svg>
@@ -51,7 +52,7 @@
     </div>
   </header>
 
-  <form class="formNovoCartao container">
+  <form class="formNovoCartao container no-js">
     <textarea class="formNovoCartao-conteudo" name="formNovoCartao-conteudo" placeholder="Digite aqui"></textarea>
     <input class="formNovoCartao-salvar" type="submit" value="Salvar">
   </form>
@@ -60,7 +61,7 @@
 
     <article id="cartao_1" class="cartao">
       <div class="opcoesDoCartao">
-        <button class="opcoesDoCartao-remove opcoesDoCartao-opcao" onclick="this.parentNode.parentNode.remove()"
+        <button class="opcoesDoCartao-remove opcoesDoCartao-opcao"
           tabindex="0">
           <svg>
             <use xlink:href="#iconeRemover"></use>
@@ -167,7 +168,7 @@
 
   </section>
   <script src="js/opcoesdapagina/btnMudaLayout.js"></script>
-
+  <script src="js/opcoesdapagina/removeCartao.js"></script>
 </body>
 
 </html>

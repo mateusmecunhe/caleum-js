@@ -22,3 +22,5 @@ btn.addEventListener("click", function(){
     mudaLayout()
 }
 )
+
+btn.classList.remove("no-js")
